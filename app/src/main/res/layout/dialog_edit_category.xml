@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Edit Category"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/text_dialog_edit_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_text_background"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:digits="@string/text_only"
+        android:hint="e.g: Burger, Pizza, Cold drinks, Salad "
+        android:textSize="16dp"/>
+
+</LinearLayout>

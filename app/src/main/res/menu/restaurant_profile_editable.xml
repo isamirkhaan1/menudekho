@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <!-- <item
+        android:id="@+id/menu_restaurant_profile_editable_search" android:icon="@android:drawable/ic_search_category_default"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom"></item>-->
+    <item
+        android:id="@+id/menu_restaurant_profile_editable_edit" android:icon="@android:drawable/ic_menu_edit"
+        android:title="Edit" app:showAsAction="ifRoom"
+        ></item>
+
+    <item
+        android:id="@+id/menu_restaurant_profile_editable_categories"
+        android:title="Category"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/menu_restaurant_profile_editable_foods"
+        android:title="Food"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/text_menu_last_updated"
+        android:title="About"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/text_menu_contact"
+        android:title="About" android:visible="false"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/menu_restaurant_profile_editable_logout"
+        android:title="Logout"
+        app:showAsAction="never"></item>
+
+
+</menu>

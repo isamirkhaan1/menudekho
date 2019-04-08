@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="horizontal|vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="1dp">
+
+                <TextView
+                    android:id="@+id/text_item_review_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:text="Ali Khan" android:textColor="@color/generalTextColor"
+                    android:textSize="11dp" android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp" android:textColor="@color/generalTextColor"
+                    android:text="says" android:visibility="gone"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_item_review_remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-1dp" android:textColor="@color/generalTextColor"
+                android:text="I ordered chicken karahi this evening, they deliver it by the given time, It was so delicious and hygenic. I'll love to order them again"
+                android:textSize="16dp"  />
+
+            <TextView
+                android:id="@+id/text_item_review_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left" android:textColor="@color/generalTextColor"
+                android:text="12/12/2016"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_star" />
+
+            <TextView
+                android:id="@+id/text_item_review_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-16dp"
+                android:text="5.0" android:textStyle="bold"
+                android:textSize="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

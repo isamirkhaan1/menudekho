@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How did you learnt about menuDekho ?"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/dialog_ref_radio_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Through Facebook"
+                    android:textColor="#666"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/dialog_ref_radio_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A friend told me"
+                    android:textColor="#666"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/dialog_ref_radio_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other source"
+                    android:textColor="#666"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/dialog_ref_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_text_background"
+                android:hint="someone@gmail.com"
+                android:inputType="textEmailAddress"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/dialog_ref_text_inst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="-1dp" android:textSize="11dp"
+                android:text="You can help your friend to win our reward by entering his/her email address above."
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

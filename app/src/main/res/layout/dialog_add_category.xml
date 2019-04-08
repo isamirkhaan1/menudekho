@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Category"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp" android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/text_dialog_add_category_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_text_background"
+                android:hint="Category name"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desc" android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/text_dialog_add_category_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                android:lines="3" android:gravity="start"
+                android:background="@drawable/custom_text_background"
+                android:hint="A little bit about category"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

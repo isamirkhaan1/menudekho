@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    tools:context="com.samirkhan.apps.citymenu.AddReviewActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_activity_add_review_rest_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Restaurant"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/ic_map_marker" />
+
+                    <TextView
+                        android:id="@+id/text_activity_add_review_rest_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:text="Street Address, City"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/ratingBar_activity_add_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:progressDrawable="@drawable/custom_ratingbar" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp" android:gravity="left"
+                android:text="Kindly express your personal and recent experience with the restaurant. It will help others to choose restaurant and food for their meals."
+                android:textSize="13dp"
+                android:textStyle="italic" />
+            <EditText
+                android:id="@+id/editText_activity_add_review_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="15dp"
+                android:digits="@string/text_with_numb"
+                android:hint="Name"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/editText_activity_add_review_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:digits="@string/text_with_numb"
+                android:hint="Contact No."
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                android:layout_marginTop="-1dp" android:gravity="left"
+                android:text="Contact information help us to trace fake reviews, it will not be shared with anyone either publicly or privately."
+                android:textSize="10dp" android:textColor="@color/colorPrimary"
+                android:textStyle="italic" />
+            <EditText
+                android:id="@+id/editText_activity_add_review_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="bottom"
+                android:hint="Your Experience"
+                android:digits="@string/text_with_numb"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_restaurantreview_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_btn_1"
+                android:text="Submit"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

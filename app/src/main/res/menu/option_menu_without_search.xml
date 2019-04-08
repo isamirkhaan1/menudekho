@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/group_menu_city">
+        <item
+            android:id="@+id/text_menu_my_city"
+            android:title="Cities"
+            app:showAsAction="never"></item>
+        <item
+            android:id="@+id/text_menu_all_cities"
+            android:title="Visit City" android:visible="false"
+            app:showAsAction="never"></item>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/text_menu_restuser"
+            android:title="Administration"
+            app:showAsAction="never"></item>
+        <item
+            android:id="@+id/text_menu_last_updated"
+            android:title="About"
+            app:showAsAction="never"></item>
+        <item
+            android:id="@+id/text_menu_contact"
+            android:title="Contact" android:visible="false"
+            app:showAsAction="never"></item>
+    </group>
+</menu>
